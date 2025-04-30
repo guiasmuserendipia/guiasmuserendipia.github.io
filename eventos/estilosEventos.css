@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #000;
+}
+#contenedorPostPortada {
+    z-index: 8;
+    width: 100%;
+    max-width: 100%;
+}
+#postportadaMain {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    margin-top: -11vh;
+}
+.tituloPpalEVENTOS {
+    color: #ef0d0d;
+   /* color: rgb(220, 213, 204);*/
+    font-size: 5rem;
+    text-align: center;
+  /*  text-shadow: 0px 13px 25px rgb(129, 123, 150);*/
+    text-shadow: 0px 13px 25px rgb(150, 123, 123);
+    padding-bottom: 5%;
+}
+#contenedorEventos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-gap: 3%;
+    grid-auto-rows: minmax(30vw, auto);
+    padding: 0 10%;
+    z-index: 10;
+}
+.textoSeccionesEventos {
+    margin-right: 2vw;
+  /*  color: #b2c5da;*/
+    color: #d73030;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-inline: auto;
+}
+.seccionesEventos {
+     display: flex;
+     align-items: center;
+     background-color: rgb(18, 17, 17);
+     border-radius: 8px;
+     width: 25vw;
+     height: 15vh;
+     margin: 1.8% 0;
+     overflow: hidden;
+ }
+.seccionesEventos:hover {
+box-shadow: 0 0 23px #e22626, 0 0 5px #975c5c;
+}
+.redDragonInva img, .whiteWizard-Inva img, .skeletonInva img, .hammerfall-inva img {
+padding-right: 7%;
+}
+/*----------------- inicio Golden inva --------------*/
+.tituloPpalEVENTOS {
+    padding-top: 5%;
+}
+#contenedorGeneralGoldenInvation {
+    color: #e22626;
+}
+.detalleInva {
+     margin-top: 3%;
+}
+.detalleInva span {
+        text-shadow: 0 0 23px #ef1717, 0 0 5px #830e01;
+}
+.detalleTextoInva2 {
+    color: #de4949;
+    padding-top: 1%;
+}
+.detalleTextoEvento2 span {
+    color: #ee8484;
+    text-shadow: 0 0 23px #ef1717, 0 0 5px #830e01;
+}
+#contenedorGeneralGoldenInvation {
+        padding: 2% 22vw;
+}
+.imgGoldenInva, .imgEventosInterno {
+    width: 55vw;
+    border-radius: 8px;
+}
+#contenedorGoldenInvaDorados, #contenedorGoldenInvaDoradosB {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+#img2GoldenInva {
+    margin: 3% 0;
+}
+#contenedorGoldenInvaDoradosB {
+    margin-top: 2%;
+}
+.ultimafrase {
+    text-align: center;
+    text-shadow: 0 0 23px #ef1717, 0 0 5px #830e01;
+    margin-top: 3%;
+    padding: 0 11vw;
+}
+/*----------------- fin de Golden inva inicio BLOOD CASTLE    --------------*/
+#contenedorGeneralBC, #contenedorGeneralDS, #contenedorGeneralKundumInva, #contenedorGeneralLoteria, #contenedorGeneralWW, #contenedorGeneralSkeletonInva, #contenedorGeneralRD, #contenedorGeneralHammerfall-Inva, #contenedorGeneralOzmaInva {
+    color: #e22626;
+    padding: 2% 22vw;
+}
+#contenedorGeneralBC h2, #contenedorGeneralDS h2 {
+    margin: 3% 0 2% 0;
+    text-shadow: 0 0 23px #ef1717, 0 0 5px #830e01;
+    font-size: 2.5rem;
+}
+.contenedorRequisitosEntradasBC {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    align-items: center;
+}
+.contenedorImagenBC {
+    margin-right: 5%;
+}
+.contenedorImagenBC img, .contenedorImagenIngresoBCyDS img{
+    border-radius: 8px;
+}
+.detalleTextoEventos3 {
+    color: #ee3b3b;
+    text-shadow: 0 0 23px #ef1717, 0 0 5px #830e01;
+}
+.contenedorImagenIngresoBCyDS img{
+    max-width: 100%;
+}
+/*----------------- fin de BLOOD CASTLE inva inicio Red Dragon   --------------*/
+#contenedorGeneralRD p {
+    margin-bottom: 3%;
+}
+#contenedorGeneralRD img {
+    margin-bottom: 1%;
+}
+/*----------------- fin de Red Dragon inva inicio Loteria    --------------*/
+.imgLoteria {
+    margin: 1% 0 3% 0;
+}
+/*----------------- fin de Loteria  inva inicio  White Wizard/Skeleton inva    --------------*/
+.imgWwizard, .imgSkeletonInva, .imgOzmaInva, .imgKundumInva, .imgHammerfallInva   {
+margin: 3% 0;
+}
+.imgDevilSquare{
+margin-bottom: 2%;
+}  /*    text-shadow: 0 0 23px #ef1717, 0 0 5px #830e01;   box-shadow: 0 0 23px #d7c1c1, 0 0 5px #ccccdc;  */
+/* ============================= COMIENZO MEDIA QUERIES =============================================== */  
+    /* ===================================== 0 ======================================= */
+       @media screen and (min-width:1px) and (max-width:600px) {
+    /* =============================================================================== */
+    .textoSeccionesEventos {
+        position: relative;
+        text-align: center;
+    }
+    .seccionesEventos img{
+        position: absolute;
+        overflow: hidden;
+        border-radius: 11px;
+        max-width: 25vw;
+        height: 15vh;
+        opacity: 0.3;
+    }
+    .tituloPpalEVENTOS, .tituloPpalGoldenInva {
+        padding: 11%;
+    }
+    #postportadaMain  { 
+        padding-top: 4vh;
+    }
+    .contenedorRequisitosEntradasBC {
+        flex-wrap: wrap;
+        padding: 5% 0 ;
+    }
+    #contenedorGeneralBC h2, #contenedorGeneralDS h2 {
+        font-size: 2rem;
+    }
+    .tituloPpalEVENTOS {
+        font-size: 3rem;
+    }
+    .ultimafrase {
+        padding: 3vw 5vw;
+    }
+}
+    /* ===================================== 1 ======================================= */
+        @media screen and (min-width:600px) and (max-width:1080px) {
+    /* =============================================================================== */
+        .textoSeccionesEventos {
+            position: relative;
+            text-align: center;
+        }
+        .seccionesEventos img{
+            position: absolute;
+            overflow: hidden;
+            border-radius: 11px;
+            width: 30vw;
+            max-width: 25vw;
+            max-height: 15vh;
+            opacity: 0.3;   
+        }
+        #postportadaMain  { 
+            padding-top: 9vh;
+        }
+        .tituloPpalEVENTOS, .tituloPpalGoldenInva {
+            padding: 11%;
+        }
+        .seccionesEventos {
+            justify-content: center;
+            padding: 0;
+        }
+        .contenedorRequisitosEntradasBC {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5% 0 ;
+        }
+        #contenedorGeneralBC h2, #contenedorGeneralDS h2 {
+            font-size: 2rem;
+        }
+        .ultimafrase {
+            padding: 3vw 5vw;
+        }
+        .redDragonInva img, .whiteWizard-Inva img, .skeletonInva img, .hammerfall-inva img {
+            padding-right: 0;
+        }
+}
+        /* ===================================== 2 ======================================= */
+            @media screen and (min-width:1080px) and (max-width:1360px) {
+        /* =============================================================================== */
+            .textoSeccionesEventos {
+                position: relative;
+                text-align: center;
+            }
+            .seccionesEventos img{
+                position: absolute;
+                overflow: hidden;
+                border-radius: 11px;
+                width: 30vw;
+                max-width: 25vw;
+                max-height: 15vh;
+                opacity: 0.3;   
+            }
+            .tituloPpalEVENTOS, .tituloPpalGoldenInva {
+                padding: 11% 11% 5% 11%;
+            }
+            .seccionesEventos {
+                justify-content: center;
+                padding: 0;
+            }
+            #postportadaMain  { 
+                padding-top: 15vh;
+            } /* -------------inicio secciones internas --------------*/
+            .contenedorRequisitosEntradasBC {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 5% 0 ;
+            }
+            #contenedorGeneralBC h2, #contenedorGeneralDS h2 {
+                font-size: 2rem;
+            }
+            .ultimafrase {
+                padding: 3vw 5vw;
+            }
+            .redDragonInva img, .whiteWizard-Inva img, .skeletonInva img, .hammerfall-inva img {
+                padding-right: 0;
+            }
+}
