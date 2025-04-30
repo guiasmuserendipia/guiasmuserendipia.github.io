@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #000;
+}
+#contenedorPostPortada {
+    z-index: 8;
+    width: 100%;
+    max-width: 100%;
+}
+#TituloPPALcomoJugar {
+    margin: 0 25vw ;
+}
+.textoPrimerosPasos {
+    color: #b2c5da;
+    margin: 0 35vw 1vw 35vw;
+}
+#contenedorCombinaciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-gap: 3%;
+    grid-auto-rows: minmax(30vw, auto);
+    padding: 0 25%;
+    z-index: 10;
+    margin-top: 3%;
+}
+.textoSeccionesComoJugar {
+    margin-right: 2vw;
+    color: #b2c5da;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-inline: auto;
+    text-align: right;
+    padding-right: 10%;
+}
+.seccionesComoJugar img {
+    max-width: 7vw; 
+    margin-right: 10%;
+}
+#contenedor1erparrafoComoJugar {
+    padding: 2% 0;
+    box-shadow: inset 0 -3em 3em rgba(147, 21, 21, 0.1),
+    inset 0 3em 3em rgba(147, 21, 21, 0.1),
+    0 0 0 1px rgb(147, 21, 21),
+    0.3em 0.3em 1em rgba(147, 21, 21, 0.3);
+}
+.seccionesComoJugar {
+     display: flex;
+     align-items: center;
+     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(81, 20, 20, 0.71) 40%, rgba(18,17,17,0.5002333697150736) 90%);
+     background-color: rgb(18, 17, 17);
+     border-radius: 55px 8px 8px 55px;
+     width: 25vw;
+     height: 15vh;
+     margin: 1.8% 0;
+     overflow: hidden;
+ }
+ .seccionesComoJugar:hover {
+    box-shadow: 0 0 23px #d7c1c1, 0 0 5px #ccccdc;
+}
+/*-------- inicio Crear Cuenta ----------*/
+#imgFormularioCrearCuenta {
+    width: 55vw;
+}
+.titulosPasos {
+        margin-top: 3%;
+        padding-bottom: 1%;
+}
+.detallePasos {
+text-shadow: 0 0 23px #d7c1c1, 0 0 5px #ccccdc;
+}
+/*-------- fin Crear Cuenta inicio Descargar juego    ----------*/
+#tituloPPALdescargarJuego, #tituloPPALEjecutarLauncher, #tituloPPALCrearCuenta, #tituloPPALEntenderJuego, #tituloPPALJugarYavanzar {
+    padding: 5% 22vw 5vh 22vw;
+}
+#contGralDescargar-e-instalarMuSeren, #contenedorGeneralEjecutarLauncher, #contenedorGeneralCrearCuenta, #contenedorGeneralJugarYavanzar, #contenedorGeneralEntenderConceptosJuego {
+    color: #b2c5da;
+    padding: 2% 22vw;
+}
+#contGralDescargar-e-instalarMuSeren h3 {
+    text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+    font-size: 2rem;
+}
+.contPasosInstalacion {
+    display: block;
+    justify-content: center;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+.contPasosInstalacion img {
+    border-radius: 8px;
+}
+/*-------- fin Descargar juego inicio Jugar y Avanzar    ----------*/
+#consejosAdicionales {
+    box-shadow: inset 0 -3em 3em rgba(147, 21, 21, 0.1),
+    inset 0 3em 3em rgba(147, 21, 21, 0.1),
+    0 0 0 1px rgb(147, 21, 21),
+    0.3em 0.3em 1em rgba(147, 21, 21, 0.3);
+    padding: 2%;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+.detalleCosejosAdic {
+    margin-top: 2%;
+}
+#contenedorGeneralJugarYavanzar img, #contenedorGeneralEntenderConceptosJuego img {
+border-radius: 8px;
+max-width: 68vw;
+}
+#contenedorGeneralJugarYavanzar p {
+   margin-bottom: 1%;
+    }
+/*-------- fin Jugar y Avanzar inicio  Ejecutar  Launcher  ----------*/
+#contenedorGeneralEjecutarLauncher img{
+   max-width: 68vw;
+   border-radius: 8px;
+   margin-top: 1%;
+}
+#contenedorGeneralEjecutarLauncher h2 {
+    margin-top: 3%;
+}
+/* ============================= COMIENZO MEDIA QUERIES =============================================== */  
+    /* ===================================== 0 ======================================= */
+    @media screen and (min-width:1px) and (max-width:600px) {
+        /* =============================================================================== */
+        #postportadaMain {
+            margin-top: -5vh;
+        }
+        #contenedorPostPortada  { 
+            padding-top: 7vh;
+        }
+        #TituloPPALcomoJugar {
+            margin: 7vh 5vw;
+            font-size: 2.3rem;
+        }
+        .textoPrimerosPasos {
+            margin: 0 11vw 1vw 11vw;
+        }
+        .seccionesComoJugar img {
+            display: none;
+        }
+        #contenedorCombinaciones {
+            padding: 0 5%;
+            margin-top: 3%;
+        }
+        .seccionesComoJugar {
+            width: 45vw;
+        }
+        .textoSeccionesComoJugar {
+            margin-right: 2vw;
+            padding: 0 7%;
+        }
+        /* ------ fin Como jugar, inicio Crear cuenta --------------------*/
+        #tituloPPALdescargarJuego, #tituloPPALEjecutarLauncher, #tituloPPALCrearCuenta, #tituloPPALEntenderJuego, #tituloPPALJugarYavanzar {
+            padding: 5vh 11vw;
+            font-size: 3rem;
+        }
+        #contGralDescargar-e-instalarMuSeren, #contenedorGeneralEjecutarLauncher, #contenedorGeneralCrearCuenta, #contenedorGeneralJugarYavanzar, #contenedorGeneralEntenderConceptosJuego {
+            padding: 2% 11vw;
+        }
+        #contenedorGeneralCrearCuenta img, #contGralDescargar-e-instalarMuSeren img {
+            width: 100vw;
+            max-width: 100%;
+        }
+        /* ------ fin Crear cuenta, inicio Descargar juego --------------------*/
+        #contGralDescargar-e-instalarMuSeren h3 {
+            font-size: 1.8rem;
+        }
+         /* ------ fin Descargar juego, inicio Ejecutar Launcher  --------------------*/
+         #contenedorGeneralEjecutarLauncher img{
+            max-width: 100%;
+         }
+    }
+        /* ===================================== 1 ======================================= */
+           @media screen and (min-width:601px) and (max-width:1080px) {
+        /* =============================================================================== */
+        #postportadaMain {
+            margin-top: -5vh;
+        }
+        #contenedorPostPortada  { 
+            padding-top: 7vh;
+        }
+        #TituloPPALcomoJugar {
+            margin: 3vw 5vw;
+            font-size: 3rem;
+            padding: 3vw 11vw;
+        }
+        .textoPrimerosPasos {
+            margin: 0 11vw 1vw 11vw;
+        }
+        .seccionesComoJugar img {
+            display: none;
+        }
+        #contenedorCombinaciones {
+            padding: 0 5%;
+            margin-top: 3%;
+        }
+        .seccionesComoJugar {
+            width: 45vw;
+        }
+        .textoSeccionesComoJugar {
+            margin-right: 2vw;
+            padding: 0 7%;
+        }
+        /* ------ fin Como jugar, inicio Crear cuenta --------------------*/
+        #tituloPPALdescargarJuego, #tituloPPALEjecutarLauncher, #tituloPPALCrearCuenta, #tituloPPALEntenderJuego, #tituloPPALJugarYavanzar {
+            padding: 15vh 11vw 5vh 11vw;
+            font-size: 3rem;
+        }
+        #contGralDescargar-e-instalarMuSeren, #contenedorGeneralEjecutarLauncher, #contenedorGeneralCrearCuenta, #contenedorGeneralJugarYavanzar, #contenedorGeneralEntenderConceptosJuego {
+            padding: 2% 11vw;
+        }
+        #contenedorGeneralCrearCuenta img, #contGralDescargar-e-instalarMuSeren img {
+            width: 100vw;
+            max-width: 100%;
+        }
+        /* ------ fin Crear cuenta, inicio Descargar juego --------------------*/
+        #contGralDescargar-e-instalarMuSeren h3 {
+            font-size: 1.8rem;
+        }
+         /* ------ fin Descargar juego, inicio Ejecutar Launcher  --------------------*/
+         #contenedorGeneralEjecutarLauncher img{
+            max-width: 100%;
+         }
+}
+    /* ===================================== 2 ======================================= */
+         @media screen and (min-width:1081px) and (max-width:1360px) {
+    /* =============================================================================== */   
+        #postportadaMain {
+            margin-top: 5vh;
+        }
+        #contenedorPostPortada  { 
+            padding-top: 7vh;
+        }
+        #TituloPPALcomoJugar {
+            margin: 3vw 5vw;
+            font-size: 5rem;
+            padding: 15vh 11vw 5vh 11vw;
+        }
+        /* ------ fin Como jugar, inicio Crear cuenta --------------------*/
+        #tituloPPALdescargarJuego, #tituloPPALEjecutarLauncher, #tituloPPALCrearCuenta, #tituloPPALEntenderJuego, #tituloPPALJugarYavanzar {
+            padding: 30vh 11vw 3vh 11vw;
+        }
+        #contGralDescargar-e-instalarMuSeren, #contenedorGeneralEjecutarLauncher, #contenedorGeneralCrearCuenta, #contenedorGeneralJugarYavanzar, #contenedorGeneralEntenderConceptosJuego {
+            padding: 2% 22vw;
+        }
+        #contenedorGeneralCrearCuenta img, #contGralDescargar-e-instalarMuSeren img {
+            width: 100vw;
+            max-width: 100%;
+        } 
+        /* ------ fin Descargar juego, inicio Ejecutar Launcher  --------------------*/
+        #contenedorGeneralEjecutarLauncher img{
+            max-width: 100%;
+        }
+}

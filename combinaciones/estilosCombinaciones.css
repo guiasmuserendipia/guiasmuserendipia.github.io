@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #000;
+}
+#contenedorPostPortada {
+    z-index: 8;
+    width: 100%;
+    max-width: 100%;
+}
+#contenedorCombinaciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-gap: 3%;
+    grid-auto-rows: minmax(30vw, auto);
+    padding: 0 25%;
+    z-index: 10;
+}
+.textoSeccionesCombinaciones {
+    margin-right: 2vw;
+    color: #b2c5da;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-inline: auto;
+}
+.textoSecundarioFenrirYentradas {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+.seccionesCombinaciones {
+     display: flex;
+     align-items: center;
+     background-color: rgb(18, 17, 17);
+     border-radius: 8px;
+     width: 25vw;
+     height: 15vh;
+     margin: 1.8% 0;
+     overflow: hidden;
+ }
+ .seccionesCombinaciones:hover {
+    box-shadow: 0 0 23px #d7c1c1, 0 0 5px #ccccdc;
+}
+.zen {
+    grid-column: 1;
+    grid-row: 1;
+}
+.joyas {
+    grid-column: 2;
+    grid-row: 1;
+}
+.goldcoins {
+    grid-column: 3;
+    grid-row: 1;
+}
+.silvercoins {
+    grid-column: 1;
+    grid-row: 2;
+}
+/*-------------INICIO CREAR ALAS --------------*/
+#tablaCrearAlas {
+    color: #b2c5da;
+    border-radius: 8px;
+    padding: 2% 2% 4% 2.5%;
+    margin: 1% 5vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 2%;
+    background-color: #0c0c0c;  
+}
+.subInteriorCrearAlas h4, #contenedorEntradasBCyDS h2 {
+    font-size: 2rem;
+    color: #62adb6;
+    text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+}
+.subInteriorCrearAlas {
+    width: 55%;
+    padding: 0 3%;
+}
+.interiorCrearAlas {
+    width: 85vw;
+    background-color: #060606; 
+    display: flex;
+    align-items: center; 
+    border-radius: 8px;
+    border: solid 1px #15595f;
+    box-shadow: #000 0px 5px 10px 0px ;
+}
+.interiorCrearAlas .imgInventario {
+    width: 30vw;
+}
+/*-------------INICIO ENTRADAS --------------*/
+#tituloEntradas{
+    padding: 7% 25% 0 25%;
+}
+#contenedorEntradasBCyDS {
+  padding-top: 3%;
+}
+.contenedorSecundarioEntBCyDS img {
+    margin-right: 3%;
+    border-radius: 8px;
+}
+.contenedorSecundarioEntBCyDS {
+    display: flex;
+    align-items: center;
+    /*background-color: rgba(180, 4, 4, 0.3);*/
+    box-shadow: inset 0 -3em 3em rgba(147, 21, 21, 0.1),
+    inset 0 3em 3em rgba(147, 21, 21, 0.1),
+    0 0 0 1px rgb(147, 21, 21),
+    0.3em 0.3em 1em rgba(147, 21, 21, 0.3);
+    border-radius: 8px;
+    padding: 0 2% 0 0;
+    margin-top: 1%;
+}
+.contenedorListadoBCDS {
+    width: 40%;
+    background-color:   rgb(31, 88, 105, 0.3);
+    border-radius: 8px;
+    padding: 4% 3%;
+    margin: 3% 0;
+}
+ .contenedorListadoBCDS h3 {
+    margin-bottom: 4%;
+}
+.listadocombinaciones li {
+    margin-bottom: 1%;
+    padding-top: 3%;
+}
+.contenedorListadoBC h3, .listadocombinaciones li span {
+    text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+    margin: 0 0 3% 2% ;
+}
+.listadocombinaciones {
+    padding-left: 20%;
+}
+.contenedores-SectoresEntradas{
+    display: flex;
+}
+.contenedorGif {
+    margin-top: 3%;
+}
+.contenedorGif img{
+    max-width: 28vw;
+    margin-left: 11%;
+}
+/*-------------INICIO FENRIR --------------*/
+#titulo-info-Fenrir {
+    margin: -6% 0 2% 0;
+}
+#contenedorInfoFenrir, #contenedorEntradasBCyDS {
+    margin: 0 20%;
+    color: #b2c5da;
+}
+#descripcionFenrir {
+    margin-bottom: 3%;
+}
+#contenedorInfoFenrir #titulo-info-Fenrir {
+    color: #b2c5da;
+    font-size: 2rem;
+    text-align: center;
+}
+#contenedorInfoFenrir h3{
+    font-size: 2rem;
+    color: #62adb6;
+    text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+    margin: 3% 0;
+}
+#gifFenrir {
+    width: 55vw;
+    border-radius: 8px;
+}
+.celdaObtensionPartesFenrir {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.celdaObtensionPartesFenrir img{
+    margin-right: 2%;
+    border-radius: 5px;
+}
+.TituloPartesFenrir {
+    text-shadow: 1px 1px 1px #61caaa, 0 0 5px #5af8fb;
+}
+#tituloPPALfenrir{
+    margin: 0;
+}
+/*-------------INICIO SUBIR ITEMS --------------*/
+#tituloPPALSubirItems{
+    padding-top: 7%;
+}
+.titulosSubirItems {
+    color: #b2c5da;
+    font-size: 3rem;
+    text-align: center;
+}
+#tablaSubirItems {
+    color: #b2c5da;
+    border-radius: 8px;
+    padding: 2% 1%;
+    margin: 1% 5vw;
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 90vh;
+    grid-gap: 2%;
+    background-color: #0c0c0c;  
+}
+.celdaSubirItems {
+    width: 85vw;
+    background-color: #060606; 
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+.imgInventario {
+    border-radius: 8px;
+    width: 60%;
+    max-width: 60%;
+}
+.celdaSubirItems h4 {
+    font-size: 2rem;
+    color: #62adb6;
+    text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+   }
+.dondeCaePoder {
+    text-shadow: 1px 1px 1px #61caaa, 0 0 5px #5af8fb;
+}
+.celdaSubirItems h4, .celdaSubirItems p, .celdaSubirItems h5 {
+    margin: 0 10px;
+    padding: 0 1%;
+   }
+.subCeldaSubirItems {
+    margin-left: 3%;
+}
+.celdaSubirItems h5 {
+    font-size: 1.5rem;
+}
+#imgInventario-2 {
+    max-width: 40vw;
+}
+/* ============================= COMIENZO MEDIA QUERIES =============================================== */  
+    /* ===================================== 0 ======================================= */
+       @media screen and (min-width:1px) and (max-width:600px) {
+    /* =============================================================================== */
+    .textoSeccionesCombinaciones {
+        position: relative;
+        text-align: center;
+    }
+    .seccionesCombinaciones img{
+        position: absolute;
+        overflow: hidden;
+        border-radius: 11px;
+        max-width: 25vw;
+        height: 15vh;
+        opacity: 0.3;
+    }
+    #contenedorPostPortada h1 { 
+        padding-top: 15vh;
+        font-size: 3rem;
+    }
+/*-------------INICIO CREAR ALAS Y FENRIR--------------*/
+    .interiorCrearAlas, .celdaObtensionPartesFenrir { 
+        flex-wrap: wrap;
+       }
+       /*-------------INICIO ENTRADAS --------------*/
+    #tituloEntradas{
+        padding: 0% 15%;
+        font-size: 2rem;
+    }
+    .subInteriorCrearAlas h4, #contenedorEntradasBCyDS h2 {
+        text-align: center;
+    }
+    .contenedorSecundarioEntBCyDS img {
+        max-width: 95%;
+    }
+    .contenedores-SectoresEntradas, .contenedorSecundarioEntBCyDS  {
+        flex-wrap: wrap;
+        padding: 3% 3% 3% 5%;
+    }
+    .contenedorListadoBCDS {
+        width: 100%;
+    }
+    .contenedorListadoBC h3, .listadocombinaciones li span {
+        margin: 0 0 3% 0 ;
+    }
+    .listadocombinaciones {
+        padding-left: 5%;
+    }
+    .contenedorGif img{
+        max-width: 55vw;
+        margin-left: 0;
+    }
+/*-------------INICIO SUBIR ITEMS --------------*/
+    .celdaSubirItems {
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    }
+    .celdaSubirItems img {
+        margin-left: 20vw;
+    }
+    .celdaSubirItems h4 {
+        font-size: 1.5rem;
+       }
+    }
+    /* ===================================== 1 ======================================= */
+       @media screen and (min-width:600px) and (max-width:1080px) {
+    /* =============================================================================== */
+    .textoSeccionesCombinaciones {
+        position: relative;
+        text-align: center;
+    }
+    .seccionesCombinaciones img{
+        position: absolute;
+        overflow: hidden;
+        border-radius: 11px;
+        height: 15vh;
+        opacity: 0.3;
+    }
+    #contenedorPostPortada h1 { 
+        padding-top: 15vh;
+        font-size: 4rem;
+    }
+/*-------------INICIO CREAR ALAS --------------*/
+    .interiorCrearAlas { 
+        flex-wrap: wrap;
+       }
+/*-------------INICIO ENTRADAS --------------*/
+    #tituloEntradas{
+        padding: 5% 15%;
+        font-size: 3.7rem;
+    }
+    .subInteriorCrearAlas h4, #contenedorEntradasBCyDS h2 {
+        text-align: center;
+    }
+    .contenedorSecundarioEntBCyDS img {
+        max-width: 95%;
+    }
+    .contenedores-SectoresEntradas, .contenedorSecundarioEntBCyDS  {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 3% 5%;
+    }
+    .contenedorListadoBCDS {
+        width: 100%;
+    }
+    .contenedorListadoBC h3, .listadocombinaciones li span {
+        margin: 0 0 3% 0 ;
+    }
+    .listadocombinaciones {
+        padding-left: 5%;
+    }
+    .contenedorGif img{
+        max-width: 55vw;
+        margin-left: 0;
+    }
+}
+    /* ===================================== 2 ======================================= */
+        @media screen and (min-width:1081px) and (max-width:1360px) {
+    /* =============================================================================== */
+    .textoSeccionesCombinaciones {
+        position: relative;
+        text-align: center;
+    }
+    .seccionesCombinaciones img{
+        position: absolute;
+        overflow: hidden;
+        border-radius: 11px;
+        height: 15vh;
+        opacity: 0.3;
+    } 
+    #contenedorPostPortada h1 { 
+            padding-top: 23vh;
+        }
+/*-------------INICIO CREAR ALAS --------------*/
+    .interiorCrearAlas { 
+        flex-wrap: wrap;
+       }
+/*-------------INICIO ENTRADAS --------------*/
+    #tituloEntradas{
+        padding: 5% 15%;
+        font-size: 3.7rem;
+    }
+    .subInteriorCrearAlas h4, #contenedorEntradasBCyDS h2 {
+        text-align: center;
+    }
+    .contenedorSecundarioEntBCyDS img {
+        max-width: 95%;
+    }
+    .contenedores-SectoresEntradas, .contenedorSecundarioEntBCyDS  {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 3% 5%;
+    }
+    .contenedorListadoBCDS {
+        width: 100%;
+    }
+    .contenedorListadoBC h3, .listadocombinaciones li span {
+        margin: 0 0 3% 0 ;
+    }
+    .listadocombinaciones {
+        padding-left: 5%;
+    }
+    .contenedorGif img{
+        max-width: 55vw;
+        margin-left: 0;
+    }
+
+}
