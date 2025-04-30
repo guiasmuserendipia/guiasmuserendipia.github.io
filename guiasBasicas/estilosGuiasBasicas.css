@@ -1,0 +1,639 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #000;
+}
+#contenedorPostPortada {
+    z-index: 8;
+    width: 100%;
+    max-width: 100%;
+}
+#postportadaMain {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    margin-top: -11vh;
+}
+h1 {
+    color: rgb(220, 213, 204);
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 0px 13px 25px rgb(129, 123, 150);
+    padding-bottom: 5%;
+}
+#contenedorGuiasBasicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-gap: 3%;
+    grid-auto-rows: minmax(30vw, auto);
+    padding: 0 10%;
+    z-index: 10;
+}
+.textoSeccionesGuiasBasicas {
+    margin-right: 2vw;
+    color: #b2c5da;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-inline: auto;
+    text-align: right;
+}
+.questEvo p {
+    margin-right: 6%;
+}
+.seccionesGuiasBasicas {
+     display: flex;
+     align-items: center;
+     background-color: rgb(18, 17, 17);
+     border-radius: 8px;
+     width: 25vw;
+     height: 15vh;
+     margin: 1.8% 0;
+     overflow: hidden;
+ }
+.seccionesGuiasBasicas:hover {
+    box-shadow: 0 0 23px #d7c1c1, 0 0 5px #ccccdc;
+}
+.zen {
+    grid-column: 1;
+    grid-row: 1;
+}
+.joyas {
+    grid-column: 2;
+    grid-row: 1;
+}
+.goldcoins {
+    grid-column: 3;
+    grid-row: 1;
+}
+.silvercoins {
+    grid-column: 1;
+    grid-row: 2;
+}
+.pets {
+    grid-column: 2;
+    grid-row: 2;
+}
+.poderes {
+    grid-column: 3;
+    grid-row: 2;
+}
+.questEvo {
+    grid-column: 1;
+    grid-row: 3;
+}
+.otrosItems {
+    grid-column: 2;
+    grid-row: 3;
+}
+/*----------------- sección GOLDCOINS ------------------*/
+.parrafo1GOLDCOINS {
+    color: #b2c5da;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 1% 22vw;
+    font-weight: 300;
+}
+#ContenedorImgGoldcoin {
+    display: flex;
+    justify-content: center;
+}
+#ContenedorImgGoldcoin img {
+    width: 56%;
+    border-radius: 8px;
+}
+li i {
+    color:#7e93aa;
+}
+/*----------------- FIN sección GOLDCOINS, inicio sección Joyas------------------*/
+.parrafo1Joyas {
+    color: #b2c5da;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 1% 22vw;
+    font-weight: 300;
+} 
+.contenedorExplicacionJoyas {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    background-color: #060606;
+    border-radius: 8px;
+    min-height: 18vh;
+    align-items: center;
+}
+.joyasParrafo {
+    width: 20vw;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 5%;
+}
+.lineaDivisoriaJoyas {
+    border-top: 1px solid #15595f;
+    width: 100%;
+}
+.contenedorExplicacionJoyas h5 {
+    margin-top: 2%;
+    color: #b2c5da;
+}
+/*----------------- FIN sección Joyas, inicio sección Otros Items------------------*/
+.titulosOtrosItems {
+    color: #b2c5da;
+    font-size: 3rem;
+    text-align: center;
+}
+#tablaOtrosItems {
+    color: #b2c5da;
+    border-radius: 8px;
+    padding: 2% 1%;
+    margin: 1% 5vw 3% 5vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 2%;
+    background-color: #0c0c0c;  
+}
+.celdaOtrosItems {
+    background-color: #060606; 
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+.celdaOtrosItems img {
+    border-radius: 8px;
+}
+.celdaOtrosItems h4 {
+    color: #62adb6;
+    text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+   }
+.celdaOtrosItems h4, .celdaOtrosItems p {
+    margin: 0 10px;
+    padding: 0 1%;
+   }
+.subCeldaOtrosItems {
+    margin-left: 3%;
+}
+/*----------------- FIN sección Otros Items, inicio sección Pets------------------*/
+.titulosPets {
+    color: #b2c5da;
+    font-size: 3rem;
+    text-align: center;
+}
+#contenedorTablaPets, main {
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+}
+#tablaPets {
+    color: #b2c5da;
+    border-radius: 8px;
+    padding: 1.5% 1%;
+    margin: 0% 5vw 3% 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 2%;
+    background-color: #0c0c0c;  
+}
+.celdaPets {
+    background-color: #060606; 
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+.celdaPets img {
+    border-radius: 8px;
+}
+.celdaPets h4 {
+    color: #62adb6;
+    text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+   }
+.celdaPets h4, .celdaPets p {
+    margin: 0 10px;
+    padding: 0 1%;
+   }
+#darkHorse {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+}
+/*----------------- FIN sección Pets, inicio sección Poderes------------------*/
+#tituloPpalPoderes {
+    margin-bottom: -9%;
+}
+#tituloOtorganHabilidades {
+     text-shadow: 1px 2px 3px #b561ca, 0 0 5px #5af8fb;
+ }
+ #tituloCaenDrop, .dondeCaePoder {
+     text-shadow: 1px 1px 1px #61caaa, 0 0 5px #5af8fb;
+}
+#tituloCaenDrop, #tituloOtorganHabilidades{
+    font-weight: 300;
+}
+.caeEn {
+    text-align: right;
+    margin-right: 3%;
+}
+#parrafo1PODERES {
+    color: #d3dde9;
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 5% 33vw;
+    font-weight: 300;
+    text-align: center;
+}
+.titulosPoderes {
+    color: #b2c5da;
+    margin: 0 3vw;
+    font-size: 3rem;
+    font-weight: 300;
+}
+#tablaElf-MuseElf, #tablaBK, #tablaDARK-LORD, #tablaMG, #tablaSM {
+    color: #b2c5da;
+    border: solid 1px #b2c5da;
+    border-radius: 8px;
+    padding: 1.5%;
+    margin: 0 1% 3% 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+}
+.celdaElfMuseElf, .celdaBK, .celdaDL, .celdaMG, .celdaSM {
+    display: flex;
+    align-items: center;
+    background-color: #0c0c0c;
+    min-height: 11vh;
+    padding: 0.5%;
+    margin: 2px;
+  }
+  .celdaElfMuseElf h4, .celdaBK h4, .celdaDL h4, .celdaMG h4, .celdaSM h4 {
+   width: 10vw;
+   margin: 0 10px;
+   padding: 0 1%;
+   color: #62adb6;
+   text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+  }
+  .sectorIntermedioTabla {
+    min-width: 20vw;
+  }
+/*----------------- FIN sección Poderes, inicio sección QuestEvo ------------------*/
+#tituloQuestEvo {
+    padding-top: 6%;
+}
+.nombreQuestSyM, .subtituloMuHelper {
+    font-size: 2.5rem;
+}
+#contenedorQuestSabina, #contenedorQuestMarlon, #contenedorHelper1, #contenedorHelper2 {
+    color: #b2c5da;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 1% 15vw;
+    font-weight: 300;
+}
+#contenedorQuestSabina img, #contenedorQuestMarlon img {
+    border-radius: 8px;
+}
+#contenedorQuestMarlon { 
+    margin-top: 5%;
+}
+#soloBK, .razaVideo {
+    text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
+}
+.DestacadoQuest {
+    text-shadow: 0 0 23px #d7c1c1, 0 0 5px #ccccdc;
+}
+#contenedorScrollOfEmperor, #contenedorMarlonBK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+    box-shadow: inset 10px 10px 30px 100px black;
+    margin-top: 1%;
+    border-radius: 8px;
+}
+#contenedorScrollOfEmperor img, #contenedorMarlonBK img {
+ margin: 3% 2%;
+}
+#textoPostScroll {
+    margin-bottom: 3%;
+}
+#contenedorImgQuestSabina2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0;
+    background-color: #0c0c0c;
+    box-shadow: inset 10px 10px 30px 100px black;
+}
+  /*----------------- FIN sección QuestEvo, inicio sección SILVERCOINS ------------------*/
+.parrafo1SILVERCOINS {
+    color: #b2c5da;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 1% 22vw;
+    font-weight: 300;
+}
+#ContenedorImgSilverCoin{
+    display: flex;
+    justify-content: center;
+}
+#ContenedorImgSilverCoin img {
+    width: 56%;
+    border-radius: 8px;
+}
+#tiendaSilver0 {
+    width: 56vw;
+}
+/*----------------- sección ZEN ------------------*/
+#parrafo1ZEN {
+    color: #b2c5da;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 1% 22vw;
+    font-weight: 300;
+}
+#ContenedorImgZen {
+    display: flex;
+    justify-content: center;
+}
+#ContenedorImgZen img {
+    width: 56%;
+    border-radius: 8px;
+}
+/*-------------- fin sección ZEN inicio MU HELPER-----------------*/
+#tituloPpalMuHelper {
+    margin: 0% 22% 0 22%;
+    padding-top: 5%;
+}
+.video_helper, #video_autoPick {
+    width: 70vw;
+    border-radius: 11px;
+}
+#contenedorHelper1 img, #contenedorHelper2 img{
+    max-width: 100%;
+    margin: 3% 0;
+
+}
+#contenedorHelper1 img {
+    border-radius: 8px 8px 5px 5px;
+}
+.razaVideo {
+    margin-top: 3%;
+    font-size: 3rem;
+}
+#subtituloConfigHelperSegunRaza {
+    color: rgb(220, 213, 204);
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 7%;
+    background-color: #364547;
+    box-shadow: inset 0px 0px 30px 35px black;
+}
+/*----------------- FIN sección MU HELPER ------------------*/
+footer {
+    padding: 5%;
+}
+/* ============================= COMIENZO MEDIA QUERIES =============================================== */  
+    /* ===================================== 0 ======================================= */
+       @media screen and (min-width:1px) and (max-width:600px) {
+    /* =============================================================================== */
+    #postportadaMain {
+        margin-top: -5vh;
+    }
+    #GENERAL  { 
+        padding-top: 3vh;
+    }
+    .textoSeccionesGuiasBasicas {
+        position: relative;
+    }
+    .seccionesGuiasBasicas img{
+        position: absolute;
+        overflow: hidden;
+        border-radius: 11px;
+        max-width: 25vw;
+        height: 15vh;
+        opacity: 0.3;
+    }
+    /*----------------- inicio sección GOLDCOINS ------------------*/  
+    .parrafo1GOLDCOINS li {
+        margin-top: 7%;
+    }
+    /*----------------- FIN sección GOLDCOINS, inicio sección Joyas------------------*/
+    .contenedorExplicacionJoyas {
+        flex-wrap: wrap;
+    }
+    .joyasParrafo {
+        width: 50vw;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    .parrafo1Joyas h2 { 
+        text-align: center;
+        margin: 5% 0;
+    }
+    /*----------------- FIN sección Joyas, inicio sección Otros Items------------------*/
+    .celdaOtrosItems {
+        flex-wrap: wrap;
+    }
+    .titulosOtrosItems {
+        font-size: 2rem;
+        margin: 3%;
+    }
+    /*----------------- FIN sección Otros Items, inicio sección Pets ------------------*/
+    .celdaPets, #tablaPets {
+        flex-wrap: wrap;
+    }
+    #tablaPets {
+        display: flex; 
+        justify-content: space-around;
+    }
+    .celdaPets img {
+        margin: 7% 0 3% 5%;
+    }
+    .celdaPets h4, .celdaPets p {
+        margin-left: 5%;
+    }
+    .titulosPets {
+        font-size: 2rem;
+    }
+    /*----------------- FIN sección Pets, inicio sección Poderes  ------------------*/
+    #parrafo1PODERES {
+        margin: 5% 13vw;
+    }
+    #tablaElf-MuseElf, #tablaBK, #tablaDARK-LORD, #tablaMG, #tablaSM {
+        grid-template-columns: repeat(1, 1fr);    
+    }
+    .celdaElfMuseElf, .celdaBK, .celdaDL, .celdaMG, .celdaSM {
+        flex-wrap: wrap;
+      }
+    .celdaElfMuseElf h4, .celdaBK h4, .celdaDL h4, .celdaMG h4, .celdaSM h4 {
+        width: 40vw;
+    }
+    .caeEn, .sectorIntermedioTabla {
+        text-align: left;
+        margin: 2% 0 2% 3%;
+    }
+    /*----------------- FIN sección Poderes, inicio sección QuestEvo ------------------*/
+    #contenedorQuestSabina, #contenedorQuestMarlon,  #contenedorQuestSabina img, #contenedorQuestMarlon img, #contenedorHelper1, #contenedorHelper2 {
+        max-width: 90vw;
+    }
+    #contenedorQuestSabina, #contenedorQuestMarlon, #contenedorHelper1, #contenedorHelper2 {
+        margin: 0;
+        padding: 0 3%;
+    }
+    #contenedorImgQuestSabina2 {
+        flex-wrap: wrap;
+    }
+    #contenedorImgQuestSabina2 img {
+        margin-bottom: 3%;
+    }
+}
+    /* ===================================== 1 ======================================= */
+        @media screen and (min-width:600px) and (max-width:1080px) {
+    /* =============================================================================== */
+        .textoSeccionesGuiasBasicas {
+            position: relative;
+            text-align: center;
+        }
+        .seccionesGuiasBasicas img{
+            position: absolute;
+            overflow: hidden;
+            border-radius: 11px;
+            width: 25vw;
+            max-width: 35vw;
+            max-height: 15vh;
+            opacity: 0.3;
+        }  
+        .seccionesGuiasBasicas {
+            justify-content: center;
+            padding: 0;
+        }
+        #postportadaMain {
+            margin-top: -5vh;
+        }
+        h1 {
+            padding-top: 8vh;
+            font-size: 4rem;
+        }
+        /*----------------- FIN sección Otros Items, inicio sección Pets ------------------*/
+    .celdaPets, #tablaPets {
+        flex-wrap: wrap;
+    }
+    #tablaPets {
+        display: flex; 
+        background-color: #060606; 
+    }
+    .celdaPets img {
+        margin: 7% 0 3% 5%;
+    }
+    .celdaPets h4, .celdaPets p {
+        margin-left: 5%;
+    }
+    .titulosPets {
+        font-size: 2rem;
+    }
+    /*----------------- FIN sección Pets, inicio sección Poderes  ------------------*/
+    #parrafo1PODERES {
+        margin: 5% 13vw;
+    }
+    #tablaElf-MuseElf, #tablaBK, #tablaDARK-LORD, #tablaMG, #tablaSM {
+        grid-template-columns: repeat(1, 1fr);    
+    }
+    .celdaElfMuseElf, .celdaBK, .celdaDL, .celdaMG, .celdaSM {
+        flex-wrap: wrap;
+      }
+    .celdaElfMuseElf h4, .celdaBK h4, .celdaDL h4, .celdaMG h4, .celdaSM h4 {
+        width: 20vw;
+    }
+    .caeEn, .sectorIntermedioTabla {
+        text-align: left;
+        margin: 2% 0 2% 3%;
+    }
+    /*----------------- FIN sección Poderes, inicio sección QuestEvo ------------------*/
+    #contenedorQuestSabina, #contenedorQuestMarlon,  #contenedorQuestSabina img, #contenedorQuestMarlon img, #contenedorHelper1, #contenedorHelper2 {
+        max-width: 90vw;
+    }
+    #contenedorQuestSabina, #contenedorQuestMarlon, #contenedorHelper1, #contenedorHelper2 {
+        margin: 0;
+        padding: 0 3%;
+    }
+    #contenedorImgQuestSabina2 {
+        flex-wrap: wrap;
+    }
+    #contenedorImgQuestSabina2 img {
+        margin-bottom: 3%;
+    } 
+}
+/* ===================================== 2 ======================================= */
+    @media screen and (min-width:1080px) and (max-width:1360px) {
+/* =============================================================================== */
+    .textoSeccionesGuiasBasicas {
+        position: relative;
+        text-align: center;
+    }
+    .seccionesGuiasBasicas img{
+        position: absolute;
+        overflow: hidden;
+        border-radius: 11px;
+        width: 25vw;
+        max-width: 35vw;
+        max-height: 15vh;
+        opacity: 0.3;
+    }  
+    .seccionesGuiasBasicas {
+        justify-content: center;
+        padding: 0;
+    }
+    /*----------------- FIN sección Otros Items, inicio sección Pets ------------------*/
+    .celdaPets, #tablaPets {
+    flex-wrap: wrap;
+    }
+    #tablaPets {
+    display: flex; 
+    background-color: #060606; 
+    }
+    .celdaPets img {
+    margin: 7% 0 3% 5%;
+    }
+    .celdaPets h4, .celdaPets p {
+    margin-left: 5%;
+    }
+    .titulosPets {
+    font-size: 2rem;
+    }
+    /*----------------- FIN sección Pets, inicio sección Poderes  ------------------*/
+    #parrafo1PODERES {
+    margin: 5% 13vw;
+    }
+    #tablaElf-MuseElf, #tablaBK, #tablaDARK-LORD, #tablaMG, #tablaSM {
+    grid-template-columns: repeat(1, 1fr);    
+    }
+    .celdaElfMuseElf, .celdaBK, .celdaDL, .celdaMG, .celdaSM {
+    flex-wrap: wrap;
+    }
+    .celdaElfMuseElf h4, .celdaBK h4, .celdaDL h4, .celdaMG h4, .celdaSM h4 {
+    width: 20vw;
+    }
+    .caeEn, .sectorIntermedioTabla {
+    text-align: left;
+    margin: 2% 0 2% 3%;
+    }
+    /*----------------- FIN sección Poderes, inicio sección QuestEvo ------------------*/
+    #contenedorQuestSabina, #contenedorQuestMarlon,  #contenedorQuestSabina img, #contenedorQuestMarlon img, #contenedorHelper2 {
+    max-width: 90vw;
+    }
+    #contenedorQuestSabina, #contenedorQuestMarlon {
+    margin: 0;
+    padding: 0 3%;
+    }
+    #contenedorImgQuestSabina2 {
+    flex-wrap: wrap;
+    }
+    #contenedorImgQuestSabina2 img {
+    margin-bottom: 3%;
+    } 
+}
