@@ -369,7 +369,7 @@ li i {
     padding-top: 5%;
 }
 .video_helper {
-    width: 90%;
+    width: 100%;
     border-radius: 11px;
 }
 #contenedorHelper1 img, #contenedorHelper2 img{
@@ -405,7 +405,7 @@ footer {
         margin-top: -5vh;
     }
     h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         padding-bottom: 6%;
     }
     #GENERAL  { 
