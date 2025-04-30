@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #000;
+}
+#contenedorPostPortada {
+    z-index: 8;
+    width: 100%;
+    max-width: 100%;
+}
+.textoInicioMapas {
+    color: #b2c5da;
+    margin: -5vh 28vw 1vw 28vw;
+}
+#contenedorGeneralMapas {
+    padding: 2% 22vw;
+}
+#contenedorGeneralMapas .detalleNombresMapas {
+    color: #b2c5da;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px #61caaa, 0 0 5px #5af8fb;
+}
+#contenedorGeneralMapas img {
+    border-radius: 8px;
+    width: 55vw;
+    margin-bottom: 3%;
+}
+/* ============================= COMIENZO MEDIA QUERIES =============================================== */  
+    /* ===================================== 0 ======================================= */
+        @media screen and (min-width:1px) and (max-width:600px) {
+    /* =============================================================================== */
+        #contenedorGeneralMapas  .detalleNombresMapas {
+        font-size: 1.8rem;
+    }
+    .textoInicioMapas {
+        margin: 0vh 22vw 2vw 22vw;
+    }
+    #contenedorPostPortada  { 
+        padding-top: 7vh;
+    }
+}
+    /* ===================================== 1 ======================================= */
+        @media screen and (min-width:601px) and (max-width:1080px) {
+    /* =============================================================================== */
+    #contenedorPostPortada  { 
+        padding-top: 11vh;
+    }
+}
+    /* ===================================== 2 ======================================= */
+        @media screen and (min-width:1081px) and (max-width:1360px) {
+    /* =============================================================================== */
+    #contenedorPostPortada  { 
+        padding-top: 23vh;
+    }
+}
