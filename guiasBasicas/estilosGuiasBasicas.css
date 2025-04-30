@@ -368,7 +368,7 @@ li i {
     margin: 0% 22% 0 22%;
     padding-top: 5%;
 }
-.video_helper, #video_autoPick {
+.video_helper {
     width: 90%;
     border-radius: 11px;
 }
@@ -403,6 +403,10 @@ footer {
     /* =============================================================================== */
     #postportadaMain {
         margin-top: -5vh;
+    }
+    h1 {
+        font-size: 3.5rem;
+        padding-bottom: 6%;
     }
     #GENERAL  { 
         padding-top: 3vh;
