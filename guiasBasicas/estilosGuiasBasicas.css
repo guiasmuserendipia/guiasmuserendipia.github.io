@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -210,7 +209,7 @@ li i {
 .celdaPets img {
     border-radius: 8px;
 }
-.celdaPets h4 {
+.celdaPets h4, .tituloDarkHorseYraven {
     color: #62adb6;
     text-shadow: 3px 5px 13px #15595f, 0 0 5px #5af8fb;
    }
@@ -221,6 +220,44 @@ li i {
 #darkHorse {
     grid-column: 1 / span 2;
     grid-row: 6 / span 1;
+}
+#comoCrearPets {
+    color: #b2c5da;
+    border-radius: 8px;
+    padding: 1.5% 1%;
+    margin: 0% 15vw 3% 15vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2%;
+    background-color: #0c0c0c;  
+}
+.parrafoInicialDhorseyDRaven {
+    color: #b2c5da;
+    margin: 0 15vw 3% 15vw;
+}
+.parrafoInicialDhorseyDRaven img {
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+.petsEspacios {
+    margin-bottom: 1%;
+}
+.tituloDarkHorseYraven {
+    font-size: 4rem;
+}
+.celdaDhorseyDRaven {
+    background-color: #060606; 
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+}
+.interiorCeldaDHyDR {
+    padding-right: 7%;
+}
+.imgItemsDHyDR {
+    border-radius: 8px;
+    margin: 1% 3% 1% 1%;
 }
 /*----------------- FIN sección Pets, inicio sección Poderes------------------*/
 #tituloPpalPoderes {
