@@ -239,6 +239,7 @@ li i {
 .parrafoInicialDhorseyDRaven img {
     border-radius: 5px;
     margin-bottom: 3%;
+    max-width: 100%;
 }
 .petsEspacios {
     margin-bottom: 1%;
@@ -485,7 +486,7 @@ footer {
         margin: 3%;
     }
     /*----------------- FIN sección Otros Items, inicio sección Pets ------------------*/
-    .celdaPets, #tablaPets {
+    .celdaPets, #tablaPets, .celdaDhorseyDRaven {
         flex-wrap: wrap;
     }
     #tablaPets {
